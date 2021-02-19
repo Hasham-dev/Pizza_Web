@@ -12,4 +12,7 @@ export const GloablStyles = createGlobalStyle`
     overflow-x: hidden;
 
     }
+    button{
+        outline: none;
+    }
 `;

@@ -48,14 +48,16 @@ export const HeroP = styled.p`
 
 export const HeroBtn = styled.button`
   font-size: 1.2rem;
-  padding: 1rem 4rem;
+  padding: 0.5rem 2rem;
   border: none;
   background: #e31837;
   color: #fff;
   display: flex;
   transform: 0.2s ease-out;
   flex-direction: row;
-
+  width: 200px;
+  text-align: center;
+  justify-content: center;
   &:hover {
     flex-direction: row;
 
