@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { SunspotLoader } from "react-awesome-loaders";
 
 export const ProductContainer = styled.div`
   width: 100vw;
@@ -21,18 +23,18 @@ export const ProductCard = styled.div`
   line-height: 2;
   width: 300px;
 `;
-export const ProductImg = styled.img`
+export const ProductImg = styled(LazyLoadImage)`
   height: 300px;
   min-width: 300px;
   max-width: 100%;
   box-shadow: 8px 7px #fdc500;
+  
 `;
 export const ProductsHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
   font-weight: 600;
-
 `;
 export const ProductInfo = styled.div`
   display: flex;
@@ -45,7 +47,6 @@ export const ProductInfo = styled.div`
 
 export const ProductDesc = styled.p`
   margin-bottom: 1rem;
-
 `;
 
 export const ProductPrice = styled.p`
@@ -72,4 +73,11 @@ export const ProductButton = styled.button`
 export const ProductTitle = styled.h2`
   font-weight: 300 !important;
   font-size: 1.5rem;
+`;
+
+export const Loader = styled(SunspotLoader)`
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+  transform: translate(0, 35vh);
 `;
